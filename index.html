@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>VasEntra Languages — Mandarin Chinese Course (HSK 1 to HSK 6)</title>
+  <meta name="description" content="Master Mandarin Chinese with VasEntra Languages. Structured HSK 1 to HSK 6 courses for professionals, traders, students, and language enthusiasts.">
+  <meta name="theme-color" content="#0F172A">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Noto+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Ambient Glass Background Orbs -->
+  <div class="glass-bg-mesh">
+    <div class="mesh-orb orb-1"></div>
+    <div class="mesh-orb orb-2"></div>
+    <div class="mesh-orb orb-3"></div>
+  </div>
+
+  <!-- Header / Navigation -->
+  <header class="glass-header">
+    <div class="header-container">
+      <a href="#" class="brand-identity">
+        <!-- VasEntra Logo with Doorway V & 6 Colored Segments -->
+        <div class="logo-mark">
+          <svg viewBox="0 0 100 100" class="logo-svg" aria-label="VasEntra Doorway Logo">
+            <!-- Segment 1: Languages (Red) -->
+            <path d="M 50 10 A 40 40 0 0 1 85 30" fill="none" stroke="#E11D48" stroke-width="8" stroke-linecap="round"/>
+            <!-- Segment 2: Sourcing (Blue) -->
+            <path d="M 88 35 A 40 40 0 0 1 88 65" fill="none" stroke="#2563EB" stroke-width="8" stroke-linecap="round"/>
+            <!-- Segment 3: Trade (Green) -->
+            <path d="M 85 70 A 40 40 0 0 1 55 90" fill="none" stroke="#059669" stroke-width="8" stroke-linecap="round"/>
+            <!-- Segment 4: Recruitment (Purple) -->
+            <path d="M 45 90 A 40 40 0 0 1 15 70" fill="none" stroke="#7C3AED" stroke-width="8" stroke-linecap="round"/>
+            <!-- Segment 5: China Desk (Orange) -->
+            <path d="M 12 65 A 40 40 0 0 1 12 35" fill="none" stroke="#D97706" stroke-width="8" stroke-linecap="round"/>
+            <!-- Segment 6: Consulting (Plum) -->
+            <path d="M 15 30 A 40 40 0 0 1 50 10" fill="none" stroke="#9333EA" stroke-width="8" stroke-linecap="round"/>
+            <!-- Central Doorway 'V' in Dark Navy -->
+            <path d="M 32 28 L 50 72 L 68 28" fill="none" stroke="#0F172A" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <div class="brand-text">
+          <span class="brand-name">VasEntra</span>
+          <span class="brand-division">LANGUAGES</span>
+        </div>
+      </a>
+
+      <nav class="desktop-nav">
+        <a href="#courses" class="nav-link">HSK Courses</a>
+        <a href="#learners" class="nav-link">Who It's For</a>
+        <a href="#outcomes" class="nav-link">What You Gain</a>
+        <a href="#divisions" class="nav-link">Divisions</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="header-actions">
+        <a href="https://wa.me/919903544047?text=Hi%20VasEntra%20Languages%2C%20I%20would%20like%20to%20book%20a%20free%20Mandarin%20demo%20class." target="_blank" rel="noopener" class="btn-whatsapp-pill">
+          <span class="dot-online"></span>
+          <span>WhatsApp</span>
+        </a>
+        <button class="btn-primary-glass" onclick="openDemoModal()">Book Free Demo</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section class="hero-section">
+      <!-- Watermark Hanzi -->
+      <div class="hanzi-watermark" aria-hidden="true">汉语</div>
+
+      <div class="hero-content">
+        <div class="hero-badge animate-fade-in">
+          <span class="badge-dot"></span>
+          <span>MANDARIN LANGUAGE COURSE &bull; HSK 1 TO HSK 6</span>
+        </div>
+
+        <h1 class="hero-title animate-fade-in-up">
+          Speak Mandarin.<br>
+          <span class="gradient-text">Open Doors.</span>
+        </h1>
+
+        <p class="hero-subtitle animate-fade-in-up delay-1">
+          A friendly, step-by-step programme that takes you from your first tones to near-fluent, professional Mandarin.
+        </p>
+
+        <!-- Interactive Tone Pronunciation Cards -->
+        <div class="tone-soundboard animate-fade-in-up delay-2">
+          <p class="soundboard-title">Tap to listen & repeat with native pronunciation:</p>
+          <div class="tone-cards-grid">
+            <button class="tone-card" onclick="speakMandarin('你好', 'Nǐ hǎo')" title="Click to hear pronunciation">
+              <span class="hanzi-char">你好</span>
+              <span class="pinyin-text">Nǐ hǎo</span>
+              <span class="trans-text">Hello</span>
+              <span class="speaker-icon">🔊</span>
+            </button>
+            <button class="tone-card" onclick="speakMandarin('谢谢', 'Xièxie')" title="Click to hear pronunciation">
+              <span class="hanzi-char">谢谢</span>
+              <span class="pinyin-text">Xièxie</span>
+              <span class="trans-text">Thank you</span>
+              <span class="speaker-icon">🔊</span>
+            </button>
+            <button class="tone-card" onclick="speakMandarin('欢迎', 'Huānyíng')" title="Click to hear pronunciation">
+              <span class="hanzi-char">欢迎</span>
+              <span class="pinyin-text">Huānyíng</span>
+              <span class="trans-text">Welcome</span>
+              <span class="speaker-icon">🔊</span>
+            </button>
+          </div>
+        </div>
+
+        <div class="hero-ctas animate-fade-in-up delay-3">
+          <button class="btn-cta-hero" onclick="openDemoModal()">
+            <span>Book Free 30-Min Demo</span>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </button>
+          <a href="tel:+919903544047" class="btn-secondary-glass">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            <span>+91 99035 44047</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- KEY STATS STRIP -->
+    <section class="stats-section">
+      <div class="stats-glass-card">
+        <div class="stat-item">
+          <span class="stat-number">6</span>
+          <span class="stat-label">Progressive Levels</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-number">5,000</span>
+          <span class="stat-label">Words at HSK 6</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-number">390</span>
+          <span class="stat-label">Hours of Learning</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-number">1 Billion+</span>
+          <span class="stat-label">Mandarin Speakers</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- LEARNERS SECTION -->
+    <section id="learners" class="section-container">
+      <div class="section-header">
+        <span class="section-tag">Customized Programs</span>
+        <h2 class="section-title">A Course for Every Learner</h2>
+        <p class="section-desc">Tailored pedagogy mapped to your age, professional background, and life goals.</p>
+      </div>
+
+      <div class="personas-grid">
+        <!-- Persona 1: Kids -->
+        <div class="persona-card glass-panel" data-persona="kids">
+          <div class="persona-badge-wrap bg-rose">
+            <span class="hanzi-badge">童</span>
+          </div>
+          <h3 class="persona-title">Kids who love languages</h3>
+          <p class="persona-desc">Fun, gentle lessons with storytelling and interactive phonics that build a lifelong love for Mandarin early.</p>
+          <div class="persona-focus-tag">Early Childhood Phonics</div>
+        </div>
+
+        <!-- Persona 2: Students -->
+        <div class="persona-card glass-panel" data-persona="students">
+          <div class="persona-badge-wrap bg-blue">
+            <span class="hanzi-badge">学</span>
+          </div>
+          <h3 class="persona-title">Students and graduates</h3>
+          <p class="persona-desc">Stand out for global career opportunities, Chinese university scholarships, and international higher studies.</p>
+          <div class="persona-focus-tag">Scholarships & CV Boost</div>
+        </div>
+
+        <!-- Persona 3: Working Professionals -->
+        <div class="persona-card glass-panel" data-persona="professionals">
+          <div class="persona-badge-wrap bg-emerald">
+            <span class="hanzi-badge">职</span>
+          </div>
+          <h3 class="persona-title">Working professionals</h3>
+          <p class="persona-desc">Grow in MNCs, healthcare, IT, logistics, global finance, and BPO/KPO roles with fluent business communication.</p>
+          <div class="persona-focus-tag">Corporate Mobility</div>
+        </div>
+
+        <!-- Persona 4: Entrepreneurs & Traders -->
+        <div class="persona-card glass-panel featured-persona" data-persona="traders">
+          <div class="persona-badge-wrap bg-amber">
+            <span class="hanzi-badge">商</span>
+          </div>
+          <div class="card-ribbon">Most Popular</div>
+          <h3 class="persona-title">Entrepreneurs and traders</h3>
+          <p class="persona-desc">Do business with total confidence in export-import, supplier negotiation, Canton Fair visits, and factory audits.</p>
+          <div class="persona-focus-tag">B2B Trade & Sourcing</div>
+        </div>
+
+        <!-- Persona 5: HSK Aspirants -->
+        <div class="persona-card glass-panel" data-persona="hsk">
+          <div class="persona-badge-wrap bg-purple">
+            <span class="hanzi-badge">考</span>
+          </div>
+          <h3 class="persona-title">HSK aspirants</h3>
+          <p class="persona-desc">Rigorous, structured preparation from HSK 1 to HSK 6 with real exam simulations, timed drills, and mock tests.</p>
+          <div class="persona-focus-tag">Certified Exam Prep</div>
+        </div>
+
+        <!-- Persona 6: Enthusiasts -->
+        <div class="persona-card glass-panel" data-persona="enthusiasts">
+          <div class="persona-badge-wrap bg-crimson">
+            <span class="hanzi-badge">爱</span>
+          </div>
+          <h3 class="persona-title">Language enthusiasts</h3>
+          <p class="persona-desc">Explore Chinese culture, calligraphy, tea ceremonies, film, and classical literature at your own comfortable pace.</p>
+          <div class="persona-focus-tag">Culture & Immersion</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- HSK LEARNING JOURNEY (INTERACTIVE ROADMAP) -->
+    <section id="courses" class="section-container">
+      <div class="section-header">
+        <span class="section-tag">Step-by-Step Pathway</span>
+        <h2 class="section-title">Your Learning Journey</h2>
+        <p class="section-desc">Interactive curriculum roadmap from foundation tones to native professional fluency.</p>
+      </div>
+
+      <!-- Segmented Level Switcher -->
+      <div class="level-segmented-control" role="tablist">
+        <button class="level-tab active" data-level="1" onclick="selectLevel(1)">
+          <span class="tab-level-num">1</span>
+          <span class="tab-level-text">HSK 1</span>
+        </button>
+        <button class="level-tab" data-level="2" onclick="selectLevel(2)">
+          <span class="tab-level-num">2</span>
+          <span class="tab-level-text">HSK 2</span>
+        </button>
+        <button class="level-tab" data-level="3" onclick="selectLevel(3)">
+          <span class="tab-level-num">3</span>
+          <span class="tab-level-text">HSK 3</span>
+        </button>
+        <button class="level-tab" data-level="4" onclick="selectLevel(4)">
+          <span class="tab-level-num">4</span>
+          <span class="tab-level-text">HSK 4</span>
+        </button>
+        <button class="level-tab" data-level="5" onclick="selectLevel(5)">
+          <span class="tab-level-num">5</span>
+          <span class="tab-level-text">HSK 5</span>
+        </button>
+        <button class="level-tab" data-level="6" onclick="selectLevel(6)">
+          <span class="tab-level-num">6</span>
+          <span class="tab-level-text">HSK 6</span>
+        </button>
+      </div>
+
+      <!-- Dynamic Level Display Card -->
+      <div class="level-detail-card glass-panel" id="levelDisplay">
+        <!-- Rendered dynamically by app.js -->
+      </div>
+    </section>
+
+    <!-- WHAT YOU WILL GAIN -->
+    <section id="outcomes" class="section-container">
+      <div class="section-header">
+        <span class="section-tag">Proven Results</span>
+        <h2 class="section-title">What You Will Gain</h2>
+        <p class="section-desc">Practical linguistic capability built for tangible personal and professional returns.</p>
+      </div>
+
+      <div class="outcomes-grid">
+        <div class="outcome-card glass-panel">
+          <div class="outcome-icon-check">✓</div>
+          <div>
+            <h4>Accurate Pinyin and Tones</h4>
+            <p>Master tone inflection early to be understood naturally by native Mandarin speakers.</p>
+          </div>
+        </div>
+        <div class="outcome-card glass-panel">
+          <div class="outcome-icon-check">✓</div>
+          <div>
+            <h4>Solid Grammar and Vocabulary</h4>
+            <p>Intuitive sentence construction without robotic memorization or syntactic confusion.</p>
+          </div>
+        </div>
+        <div class="outcome-card glass-panel">
+          <div class="outcome-icon-check">✓</div>
+          <div>
+            <h4>Read, Write, Type & Email in Chinese</h4>
+            <p>Communicate seamlessly via WeChat, email correspondence, and business messaging.</p>
+          </div>
+        </div>
+        <div class="outcome-card glass-panel">
+          <div class="outcome-icon-check">✓</div>
+          <div>
+            <h4>Cross-Cultural and Business Etiquette</h4>
+            <p>Understand *Guanxi*, banquet protocols, dining etiquette, and high-trust negotiation styles.</p>
+          </div>
+        </div>
+        <div class="outcome-card glass-panel">
+          <div class="outcome-icon-check">✓</div>
+          <div>
+            <h4>Confidence for the HSK Exam</h4>
+            <p>Real-time mock exams that ensure high percentile performance in official testing centers.</p>
+          </div>
+        </div>
+        <div class="outcome-card glass-panel">
+          <div class="outcome-icon-check">✓</div>
+          <div>
+            <h4>Roles in Translation & Corporate Support</h4>
+            <p>Direct qualification for high-demand bilingual opportunities across global industries.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Methodology Badges -->
+      <div class="assurance-strip glass-panel">
+        <div class="badge-pill">
+          <span class="pill-dot"></span>
+          <span>Weekly Quizzes</span>
+        </div>
+        <div class="badge-pill">
+          <span class="pill-dot"></span>
+          <span>Monthly Speaking Checks</span>
+        </div>
+        <div class="badge-pill">
+          <span class="pill-dot"></span>
+          <span>HSK Mock Exams</span>
+        </div>
+        <div class="badge-pill">
+          <span class="pill-dot"></span>
+          <span>Certificate for Every Module</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- VASENTRA ECOSYSTEM (DIVISIONS) -->
+    <section id="divisions" class="section-container">
+      <div class="section-header">
+        <span class="section-tag">VasEntra Group</span>
+        <h2 class="section-title">Every Division, One Family</h2>
+        <p class="section-desc">VasEntra connects cross-border commerce, talent, and culture through specialized divisions.</p>
+      </div>
+
+      <div class="divisions-grid">
+        <div class="division-card glass-panel active-division">
+          <div class="div-color-bar bg-rose"></div>
+          <span class="div-tag">Flagship</span>
+          <h3>VasEntra Languages</h3>
+          <p>Mandarin Chinese mastery from HSK 1 to HSK 6, corporate language training, and cultural diplomacy.</p>
+        </div>
+        <div class="division-card glass-panel">
+          <div class="div-color-bar bg-blue"></div>
+          <h3>VasEntra Sourcing</h3>
+          <p>End-to-end product sourcing, direct factory audits, quality control, and supply chain verification in China.</p>
+        </div>
+        <div class="division-card glass-panel">
+          <div class="div-color-bar bg-emerald"></div>
+          <h3>VasEntra Trade</h3>
+          <p>B2B import-export logistics, custom clearance guidance, and bilateral trade bridge execution.</p>
+        </div>
+        <div class="division-card glass-panel">
+          <div class="div-color-bar bg-purple"></div>
+          <h3>VasEntra Recruitment</h3>
+          <p>Specialized bilingual staffing, corporate recruitment, and Mandarin translator placement.</p>
+        </div>
+        <div class="division-card glass-panel">
+          <div class="div-color-bar bg-amber"></div>
+          <h3>VasEntra China Desk</h3>
+          <p>Dedicated corporate advisory, delegation escorting, business representation, and Canton Fair advisory.</p>
+        </div>
+        <div class="division-card glass-panel">
+          <div class="div-color-bar bg-crimson"></div>
+          <h3>VasEntra Consulting</h3>
+          <p>Cross-border market entry strategy, contract vetting, and commercial negotiation mediation.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- BOTTOM ENROLMENT CTA BANNER -->
+    <section class="section-container" id="enrol">
+      <div class="enrol-banner glass-panel">
+        <div class="enrol-content">
+          <span class="enrol-eyebrow">Start Today</span>
+          <h2 class="enrol-title">Start your Mandarin journey today</h2>
+          <p class="enrol-desc">Call or WhatsApp us to enrol and choose the level that fits your timeline and ambition.</p>
+          <div class="enrol-buttons">
+            <button class="btn-enrol-gold" onclick="openDemoModal()">Book Free Demo Class</button>
+            <a href="https://wa.me/919903544047?text=Hi%20VasEntra%20Languages%2C%20I%20would%20like%20to%20enrol%20in%20the%20Mandarin%20course." target="_blank" rel="noopener" class="btn-enrol-whatsapp">
+              <span>Chat on WhatsApp</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer id="contact" class="glass-footer">
+    <div class="footer-container">
+      <div class="footer-brand">
+        <div class="footer-logo-row">
+          <div class="brand-text">
+            <span class="brand-name">VasEntra</span>
+            <span class="brand-division">LANGUAGES</span>
+          </div>
+        </div>
+        <p class="footer-tagline">Begin your Mandarin journey with us today. Structured courses, native pronunciation, and certified trainers.</p>
+      </div>
+
+      <div class="footer-contacts">
+        <a href="tel:+919903544047" class="footer-contact-card glass-panel">
+          <div class="contact-icon bg-amber">📞</div>
+          <div>
+            <span class="contact-label">Call or WhatsApp</span>
+            <span class="contact-val">+91 99035 44047</span>
+          </div>
+        </a>
+
+        <a href="mailto:info.vasentra@gmail.com" class="footer-contact-card glass-panel">
+          <div class="contact-icon bg-purple">✉️</div>
+          <div>
+            <span class="contact-label">Email Us</span>
+            <span class="contact-val">info.vasentra@gmail.com</span>
+          </div>
+        </a>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; <span id="year"></span> VasEntra Languages. All rights reserved.</p>
+      <div class="footer-links">
+        <a href="#courses">Courses</a>
+        <a href="#learners">Learners</a>
+        <a href="#divisions">Divisions</a>
+        <a href="https://wa.me/919903544047">Support</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- STICKY MOBILE CONVERSION DOCK (Mobile Viewport Only) -->
+  <aside class="mobile-sticky-dock" aria-label="Mobile Contact Dock">
+    <a href="tel:+919903544047" class="dock-btn dock-call" title="Call Us Directly">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+      <span>Call</span>
+    </a>
+    <a href="https://wa.me/919903544047?text=Hi%20VasEntra%20Languages%2C%20I%20want%20to%20learn%20Mandarin." target="_blank" rel="noopener" class="dock-btn dock-whatsapp" title="Chat on WhatsApp">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2zm5.78 14.07c-.24.67-1.39 1.28-1.92 1.36-.51.08-1.17.11-3.41-.8-2.86-1.16-4.7-4.08-4.84-4.27-.14-.19-1.16-1.54-1.16-2.94 0-1.4.73-2.09 1-2.37.26-.28.58-.35.77-.35.19 0 .39.01.56.01.18 0 .42-.07.65.49.24.58.82 2 .89 2.15.07.15.12.33.02.53-.1.2-.15.32-.3.5-.15.17-.31.39-.45.52-.15.15-.3.31-.13.61.17.29.76 1.25 1.63 2.03 1.12.99 2.06 1.3 2.35 1.45.29.15.46.12.63-.07.17-.19.73-.85.92-1.14.19-.29.39-.24.65-.15.26.1 1.66.78 1.95.92.29.15.49.22.56.34.07.12.07.72-.17 1.39z"/></svg>
+      <span>WhatsApp</span>
+    </a>
+    <button class="dock-btn dock-demo" onclick="openDemoModal()">
+      <span>Book Free Demo</span>
+    </button>
+  </aside>
+
+  <!-- INTERACTIVE BOOKING MODAL -->
+  <div class="modal-overlay" id="demoModal" aria-hidden="true" onclick="handleModalClick(event)">
+    <div class="modal-card glass-panel" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <button class="modal-close-btn" onclick="closeDemoModal()" aria-label="Close dialog">&times;</button>
+      <div class="modal-header">
+        <span class="modal-eyebrow">Complimentary Session</span>
+        <h3 id="modalTitle" class="modal-heading">Book Your Free 30-Min Demo</h3>
+        <p class="modal-sub">Experience our interactive teaching method, pinyin training, and get a tailored HSK study plan.</p>
+      </div>
+
+      <form id="demoForm" onsubmit="handleDemoSubmit(event)">
+        <div class="form-group">
+          <label for="userName">Full Name *</label>
+          <input type="text" id="userName" name="name" required placeholder="e.g. Rahul Sharma" class="form-input">
+        </div>
+
+        <div class="form-group">
+          <label for="userPhone">Phone / WhatsApp Number *</label>
+          <input type="tel" id="userPhone" name="phone" required placeholder="e.g. +91 98765 43210" class="form-input">
+        </div>
+
+        <div class="form-group">
+          <label for="userLevel">Target Level</label>
+          <select id="userLevel" name="level" class="form-select">
+            <option value="HSK 1 (Beginner)">HSK 1 — Absolute Beginner</option>
+            <option value="HSK 2 (Elementary)">HSK 2 — Elementary</option>
+            <option value="HSK 3 (Pre-Intermediate)">HSK 3 — Pre-Intermediate</option>
+            <option value="HSK 4 (Intermediate)">HSK 4 — Intermediate</option>
+            <option value="HSK 5-6 (Advanced)">HSK 5-6 — Advanced</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="userGoal">Primary Goal</label>
+          <select id="userGoal" name="goal" class="form-select">
+            <option value="Business & Sourcing in China">Business, Sourcing & Trade in China</option>
+            <option value="Career Growth in MNC">Career Growth in MNC / Bilingual Jobs</option>
+            <option value="University Studies & HSK Exam">University Studies / HSK Certification</option>
+            <option value="Kids Language Learning">Kids Language Learning</option>
+            <option value="Personal Hobby & Travel">Personal Hobby & Travel</option>
+          </select>
+        </div>
+
+        <button type="submit" class="btn-submit-modal">
+          <span>Confirm & Connect on WhatsApp</span>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
