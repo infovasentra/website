@@ -3,12 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-  <title>VasEntra Languages — Mandarin Chinese Course (HSK 1 to HSK 6)</title>
-  <meta name="description" content="Master Mandarin Chinese with VasEntra Languages. Structured HSK 1 to HSK 6 courses for professionals, traders, students, and language enthusiasts.">
+  <title>VASENTRA — Chinese Language Training • Interpretation • Translation • Study in China</title>
+  <meta name="description" content="VASENTRA is your bridge between India and China. Mandarin courses for kids, business professionals & HSK aspirants, plus professional interpretation, translation, and Study in China scholarship guidance.">
   <meta name="theme-color" content="#0F172A">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Noto+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Noto+Sans+SC:wght@400;500;700&family=Noto+Sans+Devanagari:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -24,9 +24,9 @@
   <header class="glass-header">
     <div class="header-container">
       <a href="#" class="brand-identity">
-        <!-- VasEntra Logo with Doorway V & 6 Colored Segments -->
+        <!-- VASENTRA Doorway Logo with 6 Colored Segments -->
         <div class="logo-mark">
-          <svg viewBox="0 0 100 100" class="logo-svg" aria-label="VasEntra Doorway Logo">
+          <svg viewBox="0 0 100 100" class="logo-svg" aria-label="VASENTRA Doorway Logo">
             <!-- Segment 1: Languages (Red) -->
             <path d="M 50 10 A 40 40 0 0 1 85 30" fill="none" stroke="#E11D48" stroke-width="8" stroke-linecap="round"/>
             <!-- Segment 2: Sourcing (Blue) -->
@@ -44,24 +44,29 @@
           </svg>
         </div>
         <div class="brand-text">
-          <span class="brand-name">VasEntra</span>
-          <span class="brand-division">LANGUAGES</span>
+          <span class="brand-name">VASENTRA</span>
+          <span class="brand-division">INDIA • CHINA BRIDGE</span>
         </div>
       </a>
 
+      <!-- Desktop Navigation -->
       <nav class="desktop-nav">
-        <a href="#courses" class="nav-link">HSK Courses</a>
-        <a href="#learners" class="nav-link">Who It's For</a>
-        <a href="#outcomes" class="nav-link">What You Gain</a>
-        <a href="#divisions" class="nav-link">Divisions</a>
+        <a href="#courses" class="nav-link">Courses</a>
+        <a href="#kids" class="nav-link">Kids</a>
+        <a href="#business" class="nav-link">Business</a>
+        <a href="#study-china" class="nav-link">Study in China</a>
+        <a href="#services" class="nav-link">Services</a>
+        <a href="#resources" class="nav-link">Resources</a>
         <a href="#contact" class="nav-link">Contact</a>
       </nav>
 
+      <!-- Language Switcher & Primary Action -->
       <div class="header-actions">
-        <a href="https://wa.me/919903544047?text=Hi%20VasEntra%20Languages%2C%20I%20would%20like%20to%20book%20a%20free%20Mandarin%20demo%20class." target="_blank" rel="noopener" class="btn-whatsapp-pill">
-          <span class="dot-online"></span>
-          <span>WhatsApp</span>
-        </a>
+        <div class="lang-switcher" aria-label="Language selection">
+          <button class="lang-btn active" data-lang="en" onclick="setLanguage('en')">EN</button>
+          <button class="lang-btn" data-lang="hi" onclick="setLanguage('hi')">हिन्दी</button>
+          <button class="lang-btn" data-lang="zh" onclick="setLanguage('zh')">中文</button>
+        </div>
         <button class="btn-primary-glass" onclick="openDemoModal()">Book Free Demo</button>
       </div>
     </div>
@@ -76,35 +81,39 @@
       <div class="hero-content">
         <div class="hero-badge animate-fade-in">
           <span class="badge-dot"></span>
-          <span>MANDARIN LANGUAGE COURSE &bull; HSK 1 TO HSK 6</span>
+          <span>YOUR BRIDGE BETWEEN INDIA AND CHINA</span>
         </div>
 
         <h1 class="hero-title animate-fade-in-up">
-          Speak Mandarin.<br>
+          Learn Chinese.<br>
           <span class="gradient-text">Open Doors.</span>
+          <span class="hero-second-line">to the World's Second-Largest Economy</span>
         </h1>
 
         <p class="hero-subtitle animate-fade-in-up delay-1">
-          A friendly, step-by-step programme that takes you from your first tones to near-fluent, professional Mandarin.
+          Mandarin courses for kids, students, and professionals, plus certified interpretation, document translation, and Study in China scholarship support — all under one roof.
         </p>
 
         <!-- Interactive Tone Pronunciation Cards -->
         <div class="tone-soundboard animate-fade-in-up delay-2">
-          <p class="soundboard-title">Tap to listen & repeat with native pronunciation:</p>
+          <div class="soundboard-header">
+            <span class="soundboard-title">Interactive Tone & Pronunciation Lab</span>
+            <span class="soundboard-tip">Tap to hear native Beijing Mandarin</span>
+          </div>
           <div class="tone-cards-grid">
-            <button class="tone-card" onclick="speakMandarin('你好', 'Nǐ hǎo')" title="Click to hear pronunciation">
+            <button class="tone-card" onclick="speakMandarin('你好', 'Nǐ hǎo')" title="Click to listen">
               <span class="hanzi-char">你好</span>
               <span class="pinyin-text">Nǐ hǎo</span>
               <span class="trans-text">Hello</span>
               <span class="speaker-icon">🔊</span>
             </button>
-            <button class="tone-card" onclick="speakMandarin('谢谢', 'Xièxie')" title="Click to hear pronunciation">
+            <button class="tone-card" onclick="speakMandarin('谢谢', 'Xièxie')" title="Click to listen">
               <span class="hanzi-char">谢谢</span>
               <span class="pinyin-text">Xièxie</span>
               <span class="trans-text">Thank you</span>
               <span class="speaker-icon">🔊</span>
             </button>
-            <button class="tone-card" onclick="speakMandarin('欢迎', 'Huānyíng')" title="Click to hear pronunciation">
+            <button class="tone-card" onclick="speakMandarin('欢迎', 'Huānyíng')" title="Click to listen">
               <span class="hanzi-char">欢迎</span>
               <span class="pinyin-text">Huānyíng</span>
               <span class="trans-text">Welcome</span>
@@ -113,15 +122,47 @@
           </div>
         </div>
 
+        <!-- Hero CTAs -->
         <div class="hero-ctas animate-fade-in-up delay-3">
           <button class="btn-cta-hero" onclick="openDemoModal()">
-            <span>Book Free 30-Min Demo</span>
+            <span>Book Free Demo Class</span>
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
           </button>
-          <a href="tel:+919903544047" class="btn-secondary-glass">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-            <span>+91 99035 44047</span>
+          <a href="#services" class="btn-secondary-glass">
+            <span>Explore Services</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 9l-7 7-7-7"/></svg>
           </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- WORD OF THE DAY (Interactive Widget) -->
+    <section class="section-container" id="resources">
+      <div class="wotd-card glass-panel animate-fade-in">
+        <div class="wotd-badge">
+          <span class="wotd-dot"></span>
+          <span>FREE CHINESE WORD OF THE DAY</span>
+        </div>
+        <div class="wotd-content">
+          <div class="wotd-main">
+            <span class="wotd-hanzi" id="wotdHanzi">朋友</span>
+            <div class="wotd-meta">
+              <span class="wotd-pinyin" id="wotdPinyin">péngyou</span>
+              <span class="wotd-meaning" id="wotdMeaning">Friend / Companion</span>
+            </div>
+          </div>
+          <div class="wotd-sentence">
+            <span class="wotd-sample-label">Example sentence:</span>
+            <p id="wotdSentence">我们都是好朋友。(Wǒmen dōu shì hǎo péngyou.) — We are all good friends.</p>
+          </div>
+        </div>
+        <div class="wotd-actions">
+          <button class="btn-wotd-listen" onclick="playWotdAudio()">
+            <span>🔊 Listen Pronunciation</span>
+          </button>
+          <button class="btn-wotd-next" onclick="cycleWotd()">
+            <span>Next Word →</span>
+          </button>
         </div>
       </div>
     </section>
@@ -131,94 +172,212 @@
       <div class="stats-glass-card">
         <div class="stat-item">
           <span class="stat-number">6</span>
-          <span class="stat-label">Progressive Levels</span>
+          <span class="stat-label">Progressive Levels (HSK 1-6)</span>
         </div>
         <div class="stat-divider"></div>
         <div class="stat-item">
-          <span class="stat-number">5,000</span>
-          <span class="stat-label">Words at HSK 6</span>
+          <span class="stat-number">100%</span>
+          <span class="stat-label">Scholarship Guidance</span>
         </div>
         <div class="stat-divider"></div>
         <div class="stat-item">
-          <span class="stat-number">390</span>
-          <span class="stat-label">Hours of Learning</span>
+          <span class="stat-number">300+</span>
+          <span class="stat-label">Bilingual Interpreters</span>
         </div>
         <div class="stat-divider"></div>
         <div class="stat-item">
           <span class="stat-number">1 Billion+</span>
-          <span class="stat-label">Mandarin Speakers</span>
+          <span class="stat-label">Mandarin Speakers Worldwide</span>
         </div>
       </div>
     </section>
 
-    <!-- LEARNERS SECTION -->
+    <!-- WHO IS THIS FOR? (4 PILLARS) -->
     <section id="learners" class="section-container">
       <div class="section-header">
         <span class="section-tag">Customized Programs</span>
-        <h2 class="section-title">A Course for Every Learner</h2>
-        <p class="section-desc">Tailored pedagogy mapped to your age, professional background, and life goals.</p>
+        <h2 class="section-title">Who Is This For?</h2>
+        <p class="section-desc">Practical linguistic and professional pathways designed for your exact career and academic trajectory.</p>
       </div>
 
       <div class="personas-grid">
-        <!-- Persona 1: Kids -->
-        <div class="persona-card glass-panel" data-persona="kids">
+        <!-- 1. For Kids -->
+        <div class="persona-card glass-panel" onclick="scrollToSection('kids')">
           <div class="persona-badge-wrap bg-rose">
-            <span class="hanzi-badge">童</span>
+            <span class="hanzi-badge">🐼</span>
           </div>
-          <h3 class="persona-title">Kids who love languages</h3>
-          <p class="persona-desc">Fun, gentle lessons with storytelling and interactive phonics that build a lifelong love for Mandarin early.</p>
-          <div class="persona-focus-tag">Early Childhood Phonics</div>
+          <h3 class="persona-title">For Kids (Ages 5–15)</h3>
+          <p class="persona-desc">Fun, game-based learning with songs, calligraphy, and Chinese folk stories. Builds native-like pronunciation naturally early in life.</p>
+          <div class="persona-action-row">
+            <span class="persona-focus-tag">YCT Exam & Phonics</span>
+            <span class="link-arrow">Explore Kids →</span>
+          </div>
         </div>
 
-        <!-- Persona 2: Students -->
-        <div class="persona-card glass-panel" data-persona="students">
-          <div class="persona-badge-wrap bg-blue">
-            <span class="hanzi-badge">学</span>
-          </div>
-          <h3 class="persona-title">Students and graduates</h3>
-          <p class="persona-desc">Stand out for global career opportunities, Chinese university scholarships, and international higher studies.</p>
-          <div class="persona-focus-tag">Scholarships & CV Boost</div>
-        </div>
-
-        <!-- Persona 3: Working Professionals -->
-        <div class="persona-card glass-panel" data-persona="professionals">
-          <div class="persona-badge-wrap bg-emerald">
-            <span class="hanzi-badge">职</span>
-          </div>
-          <h3 class="persona-title">Working professionals</h3>
-          <p class="persona-desc">Grow in MNCs, healthcare, IT, logistics, global finance, and BPO/KPO roles with fluent business communication.</p>
-          <div class="persona-focus-tag">Corporate Mobility</div>
-        </div>
-
-        <!-- Persona 4: Entrepreneurs & Traders -->
-        <div class="persona-card glass-panel featured-persona" data-persona="traders">
+        <!-- 2. For Business Professionals -->
+        <div class="persona-card glass-panel featured-persona" onclick="scrollToSection('business')">
           <div class="persona-badge-wrap bg-amber">
             <span class="hanzi-badge">商</span>
           </div>
           <div class="card-ribbon">Most Popular</div>
-          <h3 class="persona-title">Entrepreneurs and traders</h3>
-          <p class="persona-desc">Do business with total confidence in export-import, supplier negotiation, Canton Fair visits, and factory audits.</p>
-          <div class="persona-focus-tag">B2B Trade & Sourcing</div>
+          <h3 class="persona-title">For Business & Traders</h3>
+          <p class="persona-desc">Master supplier negotiation, quality audits, factory visits in Yiwu/Guangzhou, and Canton Fair preparation with cultural business etiquette.</p>
+          <div class="persona-action-row">
+            <span class="persona-focus-tag">B2B Trade & Sourcing</span>
+            <span class="link-arrow">Explore Business →</span>
+          </div>
         </div>
 
-        <!-- Persona 5: HSK Aspirants -->
-        <div class="persona-card glass-panel" data-persona="hsk">
-          <div class="persona-badge-wrap bg-purple">
-            <span class="hanzi-badge">考</span>
+        <!-- 3. For Students Going to China -->
+        <div class="persona-card glass-panel" onclick="scrollToSection('study-china')">
+          <div class="persona-badge-wrap bg-blue">
+            <span class="hanzi-badge">学</span>
           </div>
-          <h3 class="persona-title">HSK aspirants</h3>
-          <p class="persona-desc">Rigorous, structured preparation from HSK 1 to HSK 6 with real exam simulations, timed drills, and mock tests.</p>
-          <div class="persona-focus-tag">Certified Exam Prep</div>
+          <h3 class="persona-title">For Students & Study in China</h3>
+          <p class="persona-desc">End-to-end guidance for university admissions, CSC Chinese Government Scholarships, document legalization, and HSK 1–6 exam prep.</p>
+          <div class="persona-action-row">
+            <span class="persona-focus-tag">CSC Scholarships & HSK</span>
+            <span class="link-arrow">Check Eligibility →</span>
+          </div>
         </div>
 
-        <!-- Persona 6: Enthusiasts -->
-        <div class="persona-card glass-panel" data-persona="enthusiasts">
-          <div class="persona-badge-wrap bg-crimson">
-            <span class="hanzi-badge">爱</span>
+        <!-- 4. For Businesses & Chinese Visitors -->
+        <div class="persona-card glass-panel" onclick="scrollToSection('services')">
+          <div class="persona-badge-wrap bg-emerald">
+            <span class="hanzi-badge">译</span>
           </div>
-          <h3 class="persona-title">Language enthusiasts</h3>
-          <p class="persona-desc">Explore Chinese culture, calligraphy, tea ceremonies, film, and classical literature at your own comfortable pace.</p>
-          <div class="persona-focus-tag">Culture & Immersion</div>
+          <h3 class="persona-title">For Companies & Visitors</h3>
+          <p class="persona-desc">On-demand certified interpreters in India and China, certified document translation (Chinese ↔ English ↔ Hindi), and corporate language staffing.</p>
+          <div class="persona-action-row">
+            <span class="persona-focus-tag">Interpretation & Translation</span>
+            <span class="link-arrow">Get a Quote →</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION: CHINESE FOR KIDS -->
+    <section id="kids" class="section-container">
+      <div class="kids-banner glass-panel">
+        <div class="kids-grid">
+          <div class="kids-content">
+            <span class="kids-tag">🐼 Ages 5 to 15 Years</span>
+            <h2 class="kids-title">Make Your Child Fluent in the Language of the Future</h2>
+            <p class="kids-desc">Interactive, joyful Mandarin lessons blending cartoons, songs, games, and cultural workshops that make tones effortless for young minds.</p>
+            
+            <div class="kids-highlights-list">
+              <div class="highlight-item">
+                <span class="highlight-icon">🎨</span>
+                <span><strong>Character Drawing Games:</strong> Visual stroke-order games that build cognitive memory.</span>
+              </div>
+              <div class="highlight-item">
+                <span class="highlight-icon">🏮</span>
+                <span><strong>Cultural Celebrations:</strong> Chinese New Year, lantern riddles & Mid-Autumn storytelling.</span>
+              </div>
+              <div class="highlight-item">
+                <span class="highlight-icon">🏆</span>
+                <span><strong>Small Batches (4–6 Kids):</strong> High-attention 1-on-1 focus with verified, child-friendly teachers.</span>
+              </div>
+            </div>
+
+            <!-- Age Cohorts -->
+            <div class="cohorts-row">
+              <div class="cohort-pill">
+                <strong>Little Pandas</strong>
+                <span>5–7 yrs • Sounds & Songs</span>
+              </div>
+              <div class="cohort-pill">
+                <strong>Young Explorers</strong>
+                <span>8–11 yrs • YCT Level 1–2</span>
+              </div>
+              <div class="cohort-pill">
+                <strong>Junior Achievers</strong>
+                <span>12–15 yrs • HSK & Reading</span>
+              </div>
+            </div>
+
+            <div class="kids-cta-row">
+              <button class="btn-kids-cta" onclick="openDemoModalForCohort('Child')">Book a Free Trial Class for Your Child</button>
+              <a href="https://wa.me/919903544047?text=Hi%20VASENTRA%2C%20I%20want%20to%20know%20more%20about%20Chinese%20for%20Kids." target="_blank" rel="noopener" class="btn-whatsapp-simple">
+                <span>WhatsApp Parent Desk</span>
+              </a>
+            </div>
+          </div>
+
+          <div class="kids-visual-card glass-panel">
+            <div class="panda-mascot-circle">🐼</div>
+            <h3>Parent Peace of Mind</h3>
+            <ul class="kids-perks-list">
+              <li>✓ Monthly recorded video progress reports</li>
+              <li>✓ Regular Parent-Teacher feedback meets</li>
+              <li>✓ Safe, background-verified educators</li>
+              <li>✓ Official YCT (Youth Chinese Test) certification</li>
+            </ul>
+            <div class="guarantee-box">
+              <span>⭐️ 100% Fun Guarantee: If your child doesn't love the first class, it's completely free.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION: CHINESE FOR BUSINESS PROFESSIONALS -->
+    <section id="business" class="section-container">
+      <div class="section-header">
+        <span class="section-tag">Corporate & Trade Mastery</span>
+        <h2 class="section-title">Chinese for Business Professionals</h2>
+        <p class="section-desc">Practical Business Mandarin designed for importers, exporters, manufacturers, and corporate leaders dealing directly with China.</p>
+      </div>
+
+      <div class="business-grid">
+        <div class="biz-feature-card glass-panel">
+          <div class="biz-card-header">
+            <span class="biz-badge bg-amber">B2B Trade</span>
+            <h3>Sourcing & Supplier Negotiation</h3>
+          </div>
+          <p>Gain the upper hand in factory tours, sample evaluations, pricing disputes, and WeChat conversations in Yiwu, Guangzhou, and Shenzhen.</p>
+          <ul class="biz-points">
+            <li>• Raw material, MOQ, and shipping vocabulary</li>
+            <li>• WeChat business phrasing and invoice drafting</li>
+            <li>• Understanding *Guanxi*, face, and banquet etiquette</li>
+          </ul>
+        </div>
+
+        <div class="biz-feature-card glass-panel">
+          <div class="biz-card-header">
+            <span class="biz-badge bg-blue">Events & Expos</span>
+            <h3>Canton Fair & Trade Show Prep</h3>
+          </div>
+          <p>A fast-track crash course designed specifically for entrepreneurs attending the Canton Fair, China Hi-Tech Fair, or bilateral trade delegations.</p>
+          <ul class="biz-points">
+            <li>• Elevator pitches and company introductions</li>
+            <li>• Asking product specifications and lead times</li>
+            <li>• On-the-spot price bargaining and contract terms</li>
+          </ul>
+        </div>
+
+        <div class="biz-feature-card glass-panel">
+          <div class="biz-card-header">
+            <span class="biz-badge bg-emerald">Corporate Teams</span>
+            <h3>Corporate Group Training</h3>
+          </div>
+          <p>Tailored online or on-site language programs for engineering, logistics, procurement, and supply-chain divisions of leading enterprises.</p>
+          <ul class="biz-points">
+            <li>• Customized industry terminology (machinery, electronics, pharma)</li>
+            <li>• Weekend flexible batches for working executives</li>
+            <li>• Post-course bilingual competence assessments</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="biz-bottom-bar glass-panel">
+        <div>
+          <h4>Need an interpreter or contract translation for your next China trip?</h4>
+          <p>We provide certified interpreters across Beijing, Shanghai, Guangzhou & Yiwu.</p>
+        </div>
+        <div class="biz-action-group">
+          <button class="btn-primary-glass" onclick="openQuoteModal('Interpretation')">Hire an Interpreter</button>
+          <button class="btn-secondary-glass" onclick="openDemoModalForCohort('Myself')">Book Business Consultation</button>
         </div>
       </div>
     </section>
@@ -227,8 +386,8 @@
     <section id="courses" class="section-container">
       <div class="section-header">
         <span class="section-tag">Step-by-Step Pathway</span>
-        <h2 class="section-title">Your Learning Journey</h2>
-        <p class="section-desc">Interactive curriculum roadmap from foundation tones to native professional fluency.</p>
+        <h2 class="section-title">HSK 1 to HSK 6 Curriculum</h2>
+        <p class="section-desc">The international gold standard for Mandarin Chinese certification. Click any level to view vocabulary, duration, and course outline.</p>
       </div>
 
       <!-- Segmented Level Switcher -->
@@ -265,12 +424,188 @@
       </div>
     </section>
 
-    <!-- WHAT YOU WILL GAIN -->
+    <!-- SECTION: STUDY IN CHINA & SCHOLARSHIPS -->
+    <section id="study-china" class="section-container">
+      <div class="section-header">
+        <span class="section-tag">Global Education Gateway</span>
+        <h2 class="section-title">Study in China on a Scholarship</h2>
+        <p class="section-desc">Comprehensive guidance: university shortlisting, CSC government scholarships, JW202 visa processing, and language foundation.</p>
+      </div>
+
+      <div class="scholarship-hero-card glass-panel">
+        <div class="scholarship-intro">
+          <span class="scholarship-tag">Full & Partial Grants</span>
+          <h3>Why Choose China for Higher Studies?</h3>
+          <p>China is home to world-renowned universities (Tsinghua, Peking, Fudan, Zhejiang) offering programs taught in English and Chinese with subsidized tuition, modern infrastructure, and generous government stipends.</p>
+          
+          <div class="scholarship-types-grid">
+            <div class="grant-card">
+              <h4>Chinese Govt. Scholarship (CSC)</h4>
+              <p>100% Tuition waiver, free accommodation + monthly living allowance (¥2,500 – ¥3,500/mo).</p>
+            </div>
+            <div class="grant-card">
+              <h4>Provincial & City Grants</h4>
+              <p>Tuition relief across Shanghai, Jiangsu, Zhejiang, and Beijing municipal foundations.</p>
+            </div>
+            <div class="grant-card">
+              <h4>University & Merit Grants</h4>
+              <p>Direct academic scholarships for Bachelor's, Master's, PhD, and 1-year language immersion.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 7-Step Process Timeline -->
+      <div class="timeline-wrapper glass-panel">
+        <h3 class="timeline-title">Our 7-Step Admission & Visa Roadmap</h3>
+        <div class="timeline-steps">
+          <div class="timeline-step">
+            <div class="step-circle">1</div>
+            <h4>Free Profile Evaluation</h4>
+            <p>Assess academic CGPA, language background & career objectives.</p>
+          </div>
+          <div class="timeline-step">
+            <div class="step-circle">2</div>
+            <h4>University Selection</h4>
+            <p>Shortlist target universities & English-taught or Chinese-taught degrees.</p>
+          </div>
+          <div class="timeline-step">
+            <div class="step-circle">3</div>
+            <h4>Scholarship Prep</h4>
+            <p>Draft compelling SOP, study plan, research proposal & recommendation letters.</p>
+          </div>
+          <div class="timeline-step">
+            <div class="step-circle">4</div>
+            <h4>Legal Translation</h4>
+            <p>Translate & notarize transcripts, degree certificates, and police clearances.</p>
+          </div>
+          <div class="timeline-step">
+            <div class="step-circle">5</div>
+            <h4>Application Filing</h4>
+            <p>Official submission to university portals & CSC scholarship authorities.</p>
+          </div>
+          <div class="timeline-step">
+            <div class="step-circle">6</div>
+            <h4>JW202 & Visa (X1/X2)</h4>
+            <p>Secure official admission letter, JW202 form & student visa endorsement.</p>
+          </div>
+          <div class="timeline-step">
+            <div class="step-circle">7</div>
+            <h4>Pre-Departure Briefing</h4>
+            <p>Survival Mandarin crash course, WeChat/Alipay setup & airport pickup.</p>
+          </div>
+        </div>
+
+        <div class="timeline-cta-box">
+          <button class="btn-enrol-gold" onclick="openEligibilityModal()">Check Your Eligibility for Free</button>
+          <span class="timeline-note">No obligation • Personalized report within 24 hours</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION: INTERPRETATION & TRANSLATION SERVICES -->
+    <section id="services" class="section-container">
+      <div class="section-header">
+        <span class="section-tag">B2B Language Operations</span>
+        <h2 class="section-title">Professional Interpretation & Translation</h2>
+        <p class="section-desc">Bridging communication friction across commercial negotiations, technical machinery setups, and legal agreements.</p>
+      </div>
+
+      <div class="services-dual-grid">
+        <!-- Service Block 1: Interpretation -->
+        <div class="service-box glass-panel">
+          <div class="service-icon-wrap bg-blue">
+            <span class="service-emoji">🎙️</span>
+          </div>
+          <h3>Interpretation Services</h3>
+          <p class="service-sub">Native-fluent bilingual specialists for meetings, plant floors, and international expos.</p>
+
+          <div class="service-sub-columns">
+            <div class="service-sub-col">
+              <h4>🇮🇳 In India:</h4>
+              <ul>
+                <li>• Chinese delegations & tech visits</li>
+                <li>• Factory machine installations</li>
+                <li>• Legal, tax, and corporate appointments</li>
+                <li>• Hospital & travel accompaniment</li>
+              </ul>
+            </div>
+            <div class="service-sub-col">
+              <h4>🇨🇳 In China:</h4>
+              <ul>
+                <li>• Canton Fair & industry trade shows</li>
+                <li>• Supplier audits in Yiwu & Shenzhen</li>
+                <li>• Contract disputes & settlement talks</li>
+                <li>• Factory inspection & quality checks</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="service-pricing-badge">
+            <span>Flexible Packages: Hourly • Half-Day • Multi-Day Deployments</span>
+          </div>
+          <button class="btn-primary-glass" style="width:100%;" onclick="openQuoteModal('Interpretation')">Request Interpretation Quote</button>
+        </div>
+
+        <!-- Service Block 2: Translation -->
+        <div class="service-box glass-panel">
+          <div class="service-icon-wrap bg-emerald">
+            <span class="service-emoji">📄</span>
+          </div>
+          <h3>Document Translation</h3>
+          <p class="service-sub">High-precision translation across <strong>Chinese ↔ English ↔ Hindi</strong> with certified stamping.</p>
+
+          <div class="service-types-list">
+            <div class="doc-type-pill">
+              <strong>Legal:</strong> Contracts, NDAs, court papers, MoUs
+            </div>
+            <div class="doc-type-pill">
+              <strong>Technical:</strong> Machinery user guides, CAD drawings, patents
+            </div>
+            <div class="doc-type-pill">
+              <strong>Business:</strong> Product catalogs, presentations, websites
+            </div>
+            <div class="doc-type-pill">
+              <strong>Academic:</strong> Degrees, marksheets, medical clearance forms
+            </div>
+          </div>
+
+          <div class="service-trust-features">
+            <span>🔒 Strict Non-Disclosure Agreement (NDA) guarantee</span>
+            <span>⚡ Urgent turnaround within 24–48 hours available</span>
+          </div>
+          <button class="btn-primary-glass" style="width:100%;" onclick="openQuoteModal('Translation')">Upload Document for Free Quote</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION: CORPORATE OUTSOURCING -->
+    <section class="section-container" id="outsourcing">
+      <div class="outsourcing-banner glass-panel">
+        <div class="outsourcing-left">
+          <span class="outsourcing-tag">Staffing & Enterprise Solutions</span>
+          <h2>Chinese Language Experts for Your Business, On Demand</h2>
+          <p>Struggling to hire Chinese-speaking staff in India? We provide pre-vetted bilingual professionals, long-term contract translators, customer support executives, and on-site factory interpreters.</p>
+          <div class="outsourcing-pills">
+            <span>✓ Contract Interpreters</span>
+            <span>✓ Sourcing Specialists</span>
+            <span>✓ Factory On-Site Support</span>
+            <span>✓ App & Web Localization</span>
+          </div>
+        </div>
+        <div class="outsourcing-right">
+          <button class="btn-enrol-gold" onclick="openQuoteModal('Outsourcing')">Talk to Our Enterprise Team</button>
+          <a href="tel:+919903544047" class="btn-secondary-glass">Call Corporate Desk: +91 99035 44047</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- WHAT YOU WILL GAIN (Tightened spacing per Agentation) -->
     <section id="outcomes" class="section-container">
       <div class="section-header">
         <span class="section-tag">Proven Results</span>
         <h2 class="section-title">What You Will Gain</h2>
-        <p class="section-desc">Practical linguistic capability built for tangible personal and professional returns.</p>
+        <p class="section-desc">Practical linguistic capability built for tangible personal, academic, and business returns.</p>
       </div>
 
       <div class="outcomes-grid">
@@ -339,45 +674,110 @@
       </div>
     </section>
 
-    <!-- VASENTRA ECOSYSTEM (DIVISIONS) -->
-    <section id="divisions" class="section-container">
+    <!-- TESTIMONIALS SECTION -->
+    <section class="section-container" id="testimonials">
       <div class="section-header">
-        <span class="section-tag">VasEntra Group</span>
-        <h2 class="section-title">Every Division, One Family</h2>
-        <p class="section-desc">VasEntra connects cross-border commerce, talent, and culture through specialized divisions.</p>
+        <span class="section-tag">Success Stories</span>
+        <h2 class="section-title">What Our Learners & Clients Say</h2>
+        <p class="section-desc">Real journeys from classrooms in India to factories and top universities in China.</p>
       </div>
 
-      <div class="divisions-grid">
-        <div class="division-card glass-panel active-division">
-          <div class="div-color-bar bg-rose"></div>
-          <span class="div-tag">Flagship</span>
-          <h3>VasEntra Languages</h3>
-          <p>Mandarin Chinese mastery from HSK 1 to HSK 6, corporate language training, and cultural diplomacy.</p>
+      <div class="testimonials-grid">
+        <div class="testi-card glass-panel">
+          <div class="testi-stars">★★★★★</div>
+          <p class="testi-text">"Before VASENTRA, traveling to Yiwu was terrifying with the language barrier. After their 3-month Business Mandarin crash course, I can negotiate MOQs and prices directly with factory owners without relying on brokers."</p>
+          <div class="testi-user">
+            <div class="testi-avatar bg-amber">R</div>
+            <div>
+              <strong class="user-name">Rajesh Mehta</strong>
+              <span class="user-sub">Electronics Importer, New Delhi</span>
+            </div>
+          </div>
         </div>
-        <div class="division-card glass-panel">
-          <div class="div-color-bar bg-blue"></div>
-          <h3>VasEntra Sourcing</h3>
-          <p>End-to-end product sourcing, direct factory audits, quality control, and supply chain verification in China.</p>
+
+        <div class="testi-card glass-panel">
+          <div class="testi-stars">★★★★★</div>
+          <p class="testi-text">"VASENTRA helped me clear HSK 4 and guided my CSC Chinese Government Scholarship application to Zhejiang University. I received a 100% tuition waiver plus monthly stipend. Their SOP editing was game-changing."</p>
+          <div class="testi-user">
+            <div class="testi-avatar bg-blue">A</div>
+            <div>
+              <strong class="user-name">Ananya Sen</strong>
+              <span class="user-sub">CSC Scholar, Master's in Computer Science</span>
+            </div>
+          </div>
         </div>
-        <div class="division-card glass-panel">
-          <div class="div-color-bar bg-emerald"></div>
-          <h3>VasEntra Trade</h3>
-          <p>B2B import-export logistics, custom clearance guidance, and bilateral trade bridge execution.</p>
+
+        <div class="testi-card glass-panel">
+          <div class="testi-stars">★★★★★</div>
+          <p class="testi-text">"My 8-year-old daughter looks forward to her Mandarin class every weekend. The cartoon flashcards and singing games keep her engaged. She has already started writing characters and pronouncing tones accurately!"</p>
+          <div class="testi-user">
+            <div class="testi-avatar bg-rose">P</div>
+            <div>
+              <strong class="user-name">Priya Nair</strong>
+              <span class="user-sub">Parent of Little Panda Student, Mumbai</span>
+            </div>
+          </div>
         </div>
-        <div class="division-card glass-panel">
-          <div class="div-color-bar bg-purple"></div>
-          <h3>VasEntra Recruitment</h3>
-          <p>Specialized bilingual staffing, corporate recruitment, and Mandarin translator placement.</p>
+      </div>
+    </section>
+
+    <!-- FAQ SECTION -->
+    <section class="section-container" id="faq">
+      <div class="section-header">
+        <span class="section-tag">Got Questions?</span>
+        <h2 class="section-title">Frequently Asked Questions</h2>
+        <p class="section-desc">Everything you need to know about our courses, certifications, and bilateral services.</p>
+      </div>
+
+      <div class="faq-accordion glass-panel">
+        <div class="faq-item active">
+          <button class="faq-question" onclick="toggleFaq(this)">
+            <span>Is Chinese difficult to learn for Indians?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Mandarin grammar is actually simpler than Hindi or English: no verb conjugations, no genders, and no tenses! The only challenge is the 4 tones and Chinese characters. With our step-by-step pinyin method, learners start speaking complete sentences within the first 2 weeks.</p>
+          </div>
         </div>
-        <div class="division-card glass-panel">
-          <div class="div-color-bar bg-amber"></div>
-          <h3>VasEntra China Desk</h3>
-          <p>Dedicated corporate advisory, delegation escorting, business representation, and Canton Fair advisory.</p>
+
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)">
+            <span>What happens in the Free 30-Minute Demo class?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>You meet a live native/certified teacher, experience our interactive pronunciation training, practice the four tones, and receive a customized roadmap matching your timeline (exams, business trip, or kids' learning).</p>
+          </div>
         </div>
-        <div class="division-card glass-panel">
-          <div class="div-color-bar bg-crimson"></div>
-          <h3>VasEntra Consulting</h3>
-          <p>Cross-border market entry strategy, contract vetting, and commercial negotiation mediation.</p>
+
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)">
+            <span>Can I really get a full scholarship to study in China?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Yes. The Chinese Government Scholarship (CSC) and provincial funds offer thousands of fully funded seats covering 100% tuition, campus housing, and a monthly stipend (¥2,500 – ¥3,500). We evaluate your eligibility and assist with university shortlisting and SOP preparation.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)">
+            <span>How do your interpretation services work in China?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>We deploy on-ground bilingual interpreters across major business hubs like Guangzhou (Canton Fair), Yiwu, Shanghai, and Beijing. They accompany you to exhibitions, supplier meetings, and factory audits to ensure flawless negotiations.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)">
+            <span>Do you provide certificates upon course completion?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Yes. Every student who completes an HSK or Business Mandarin module receives a verified VASENTRA Certificate of Completion, recognized by multinational corporate employers.</p>
+          </div>
         </div>
       </div>
     </section>
@@ -386,12 +786,12 @@
     <section class="section-container" id="enrol">
       <div class="enrol-banner glass-panel">
         <div class="enrol-content">
-          <span class="enrol-eyebrow">Start Today</span>
-          <h2 class="enrol-title">Start your Mandarin journey today</h2>
-          <p class="enrol-desc">Call or WhatsApp us to enrol and choose the level that fits your timeline and ambition.</p>
+          <span class="enrol-eyebrow">Your First Class is Free</span>
+          <h2 class="enrol-title">Start your China journey today with VASENTRA</h2>
+          <p class="enrol-desc">Call, email, or chat on WhatsApp to book your free demo, check scholarship eligibility, or get an instant interpretation quote.</p>
           <div class="enrol-buttons">
             <button class="btn-enrol-gold" onclick="openDemoModal()">Book Free Demo Class</button>
-            <a href="https://wa.me/919903544047?text=Hi%20VasEntra%20Languages%2C%20I%20would%20like%20to%20enrol%20in%20the%20Mandarin%20course." target="_blank" rel="noopener" class="btn-enrol-whatsapp">
+            <a href="https://wa.me/919903544047?text=Hi%20VASENTRA%2C%20I%20would%20like%20to%20know%20more%20about%20your%20services." target="_blank" rel="noopener" class="btn-enrol-whatsapp">
               <span>Chat on WhatsApp</span>
             </a>
           </div>
@@ -406,11 +806,19 @@
       <div class="footer-brand">
         <div class="footer-logo-row">
           <div class="brand-text">
-            <span class="brand-name">VasEntra</span>
-            <span class="brand-division">LANGUAGES</span>
+            <span class="brand-name">VASENTRA</span>
+            <span class="brand-division">INDIA • CHINA BRIDGE</span>
           </div>
         </div>
-        <p class="footer-tagline">Begin your Mandarin journey with us today. Structured courses, native pronunciation, and certified trainers.</p>
+        <p class="footer-tagline">Building a trusted bridge between India and China through language mastery, professional interpretation, document translation, and academic scholarship guidance.</p>
+        
+        <div class="newsletter-box">
+          <label for="newsletterEmail">Get a free Chinese word & cultural tip every week:</label>
+          <div class="newsletter-row">
+            <input type="email" id="newsletterEmail" placeholder="Enter your email" class="form-input">
+            <button class="btn-primary-glass" onclick="handleNewsletter()">Subscribe</button>
+          </div>
+        </div>
       </div>
 
       <div class="footer-contacts">
@@ -429,15 +837,23 @@
             <span class="contact-val">info.vasentra@gmail.com</span>
           </div>
         </a>
+
+        <div class="footer-office-hours glass-panel">
+          <span class="hours-title">Support Hours:</span>
+          <p>🇮🇳 India (IST): 9:00 AM – 8:00 PM</p>
+          <p>🇨🇳 China (CST): 11:30 AM – 10:30 PM</p>
+        </div>
       </div>
     </div>
 
     <div class="footer-bottom">
-      <p>&copy; <span id="year"></span> VasEntra Languages. All rights reserved.</p>
+      <p>&copy; <span id="year"></span> VASENTRA. All rights reserved. Strictly non-listed entity.</p>
       <div class="footer-links">
         <a href="#courses">Courses</a>
-        <a href="#learners">Learners</a>
-        <a href="#divisions">Divisions</a>
+        <a href="#kids">Kids</a>
+        <a href="#business">Business</a>
+        <a href="#study-china">Study in China</a>
+        <a href="#services">Services</a>
         <a href="https://wa.me/919903544047">Support</a>
       </div>
     </div>
@@ -449,7 +865,7 @@
       <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
       <span>Call</span>
     </a>
-    <a href="https://wa.me/919903544047?text=Hi%20VasEntra%20Languages%2C%20I%20want%20to%20learn%20Mandarin." target="_blank" rel="noopener" class="dock-btn dock-whatsapp" title="Chat on WhatsApp">
+    <a href="https://wa.me/919903544047?text=Hi%20VASENTRA%2C%20I%20want%20to%20learn%20more." target="_blank" rel="noopener" class="dock-btn dock-whatsapp" title="Chat on WhatsApp">
       <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2zm5.78 14.07c-.24.67-1.39 1.28-1.92 1.36-.51.08-1.17.11-3.41-.8-2.86-1.16-4.7-4.08-4.84-4.27-.14-.19-1.16-1.54-1.16-2.94 0-1.4.73-2.09 1-2.37.26-.28.58-.35.77-.35.19 0 .39.01.56.01.18 0 .42-.07.65.49.24.58.82 2 .89 2.15.07.15.12.33.02.53-.1.2-.15.32-.3.5-.15.17-.31.39-.45.52-.15.15-.3.31-.13.61.17.29.76 1.25 1.63 2.03 1.12.99 2.06 1.3 2.35 1.45.29.15.46.12.63-.07.17-.19.73-.85.92-1.14.19-.29.39-.24.65-.15.26.1 1.66.78 1.95.92.29.15.49.22.56.34.07.12.07.72-.17 1.39z"/></svg>
       <span>WhatsApp</span>
     </a>
@@ -458,14 +874,14 @@
     </button>
   </aside>
 
-  <!-- INTERACTIVE BOOKING MODAL -->
-  <div class="modal-overlay" id="demoModal" aria-hidden="true" onclick="handleModalClick(event)">
+  <!-- MODAL 1: BOOK FREE DEMO -->
+  <div class="modal-overlay" id="demoModal" aria-hidden="true" onclick="handleModalClick(event, 'demoModal')">
     <div class="modal-card glass-panel" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
-      <button class="modal-close-btn" onclick="closeDemoModal()" aria-label="Close dialog">&times;</button>
+      <button class="modal-close-btn" onclick="closeModal('demoModal')" aria-label="Close dialog">&times;</button>
       <div class="modal-header">
-        <span class="modal-eyebrow">Complimentary Session</span>
-        <h3 id="modalTitle" class="modal-heading">Book Your Free 30-Min Demo</h3>
-        <p class="modal-sub">Experience our interactive teaching method, pinyin training, and get a tailored HSK study plan.</p>
+        <span class="modal-eyebrow">Complimentary 30-Min Session</span>
+        <h3 id="modalTitle" class="modal-heading">Book Your Free Demo Class</h3>
+        <p class="modal-sub">Experience our live interactive teaching, practice Chinese tones, and receive a customized roadmap.</p>
       </div>
 
       <form id="demoForm" onsubmit="handleDemoSubmit(event)">
@@ -480,29 +896,115 @@
         </div>
 
         <div class="form-group">
-          <label for="userLevel">Target Level</label>
-          <select id="userLevel" name="level" class="form-select">
-            <option value="HSK 1 (Beginner)">HSK 1 — Absolute Beginner</option>
-            <option value="HSK 2 (Elementary)">HSK 2 — Elementary</option>
-            <option value="HSK 3 (Pre-Intermediate)">HSK 3 — Pre-Intermediate</option>
-            <option value="HSK 4 (Intermediate)">HSK 4 — Intermediate</option>
-            <option value="HSK 5-6 (Advanced)">HSK 5-6 — Advanced</option>
+          <label for="userCohort">Who is Learning? *</label>
+          <select id="userCohort" name="cohort" class="form-select">
+            <option value="Child (Age 5-15)">My Child (Kids Program, Age 5–15)</option>
+            <option value="Myself (Adult/Professional)">Myself (Business / Career Growth)</option>
+            <option value="College Student (HSK/Study in China)">College Student (HSK Prep / Study in China)</option>
+            <option value="Corporate Team">Corporate Team (Company Training)</option>
           </select>
         </div>
 
         <div class="form-group">
-          <label for="userGoal">Primary Goal</label>
-          <select id="userGoal" name="goal" class="form-select">
-            <option value="Business & Sourcing in China">Business, Sourcing & Trade in China</option>
-            <option value="Career Growth in MNC">Career Growth in MNC / Bilingual Jobs</option>
-            <option value="University Studies & HSK Exam">University Studies / HSK Certification</option>
-            <option value="Kids Language Learning">Kids Language Learning</option>
-            <option value="Personal Hobby & Travel">Personal Hobby & Travel</option>
+          <label for="userPreferredTime">Preferred Batch Time</label>
+          <select id="userPreferredTime" name="time" class="form-select">
+            <option value="Weekday Evening">Weekday Evening (7:00 PM – 9:00 PM)</option>
+            <option value="Weekend Morning">Weekend Morning (10:00 AM – 1:00 PM)</option>
+            <option value="Weekend Evening">Weekend Evening (4:00 PM – 7:00 PM)</option>
+            <option value="Flexible / 1-on-1">Flexible / Private 1-on-1</option>
           </select>
         </div>
 
         <button type="submit" class="btn-submit-modal">
           <span>Confirm & Connect on WhatsApp</span>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- MODAL 2: STUDY IN CHINA ELIGIBILITY CHECK -->
+  <div class="modal-overlay" id="eligibilityModal" aria-hidden="true" onclick="handleModalClick(event, 'eligibilityModal')">
+    <div class="modal-card glass-panel" role="dialog" aria-modal="true" aria-labelledby="eligibilityTitle">
+      <button class="modal-close-btn" onclick="closeModal('eligibilityModal')" aria-label="Close dialog">&times;</button>
+      <div class="modal-header">
+        <span class="modal-eyebrow">Free Assessment</span>
+        <h3 id="eligibilityTitle" class="modal-heading">Check Study in China Eligibility</h3>
+        <p class="modal-sub">Tell us about your background to receive university recommendations and CSC scholarship feasibility.</p>
+      </div>
+
+      <form id="eligibilityForm" onsubmit="handleEligibilitySubmit(event)">
+        <div class="form-group">
+          <label for="elName">Full Name *</label>
+          <input type="text" id="elName" name="name" required placeholder="e.g. Ananya Sen" class="form-input">
+        </div>
+
+        <div class="form-group">
+          <label for="elPhone">WhatsApp Number *</label>
+          <input type="tel" id="elPhone" name="phone" required placeholder="e.g. +91 99035 44047" class="form-input">
+        </div>
+
+        <div class="form-group">
+          <label for="elDegree">Current Education & Percentage / CGPA *</label>
+          <input type="text" id="elDegree" name="degree" required placeholder="e.g. 12th (85%) or B.Tech (8.2 CGPA)" class="form-input">
+        </div>
+
+        <div class="form-group">
+          <label for="elTarget">Desired Program in China</label>
+          <select id="elTarget" name="targetProgram" class="form-select">
+            <option value="Bachelor's Degree (English/Chinese)">Bachelor's Degree (Engineering / Business / CS)</option>
+            <option value="Master's / PhD on Scholarship">Master's / PhD on Scholarship (CSC)</option>
+            <option value="1-Year Chinese Language Immersion">1-Year / 1-Semester Chinese Language Program</option>
+            <option value="MBBS / Medicine">MBBS / Medicine</option>
+          </select>
+        </div>
+
+        <button type="submit" class="btn-submit-modal">
+          <span>Get Free Eligibility Report</span>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- MODAL 3: TRANSLATION & INTERPRETATION QUOTE -->
+  <div class="modal-overlay" id="quoteModal" aria-hidden="true" onclick="handleModalClick(event, 'quoteModal')">
+    <div class="modal-card glass-panel" role="dialog" aria-modal="true" aria-labelledby="quoteTitle">
+      <button class="modal-close-btn" onclick="closeModal('quoteModal')" aria-label="Close dialog">&times;</button>
+      <div class="modal-header">
+        <span class="modal-eyebrow">Enterprise & Services</span>
+        <h3 id="quoteTitle" class="modal-heading">Request a Service Quote</h3>
+        <p class="modal-sub">Fast estimate for certified document translation, on-ground interpretation, or corporate outsourcing.</p>
+      </div>
+
+      <form id="quoteForm" onsubmit="handleQuoteSubmit(event)">
+        <div class="form-group">
+          <label for="quoteName">Contact Person / Company *</label>
+          <input type="text" id="quoteName" name="name" required placeholder="e.g. Rajesh Mehta (Apex Exports)" class="form-input">
+        </div>
+
+        <div class="form-group">
+          <label for="quotePhone">Phone / WhatsApp *</label>
+          <input type="tel" id="quotePhone" name="phone" required placeholder="e.g. +91 99035 44047" class="form-input">
+        </div>
+
+        <div class="form-group">
+          <label for="quoteServiceType">Service Needed *</label>
+          <select id="quoteServiceType" name="service" class="form-select">
+            <option value="Interpretation in China (Canton Fair / Sourcing)">Interpretation in China (Canton Fair / Factory Audit)</option>
+            <option value="Interpretation in India (Delegation / Factory)">Interpretation in India (Chinese Delegation / Plant Visit)</option>
+            <option value="Document Translation (Chinese <-> English/Hindi)">Document Translation (Chinese ↔ English / Hindi)</option>
+            <option value="Corporate Language Outsourcing">Corporate Language Outsourcing & Contract Staff</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="quoteDetails">Details / Dates / Word Count</label>
+          <textarea id="quoteDetails" name="details" rows="3" placeholder="e.g. 5 days in Guangzhou in April, or 20-page legal contract" class="form-input" style="resize:vertical;"></textarea>
+        </div>
+
+        <button type="submit" class="btn-submit-modal">
+          <span>Submit & Get Instant Quote via WhatsApp</span>
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
         </button>
       </form>
