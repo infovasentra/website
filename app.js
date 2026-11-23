@@ -790,7 +790,7 @@ function handleDemoSubmit(event) {
   const cohort = form.cohort.value;
   const time = form.time.value;
 
-  const text = `Hi VASENTRA! 🌟%0A%0AI want to book a *Free 30-Min Demo Session*.%0A%0A*Name:* ${encodeURIComponent(name)}%0A*Phone:* ${encodeURIComponent(phone)}%0A*Who is Learning:* ${encodeURIComponent(cohort)}%0A*Preferred Batch:* ${encodeURIComponent(time)}%0A%0APlease let me know the upcoming batch schedule!`;
+  const text = `Hi VasEntra! 🌟%0A%0AI want to book a *Free 30-Min Demo Session*.%0A%0A*Name:* ${encodeURIComponent(name)}%0A*Phone:* ${encodeURIComponent(phone)}%0A*Who is Learning:* ${encodeURIComponent(cohort)}%0A*Preferred Batch:* ${encodeURIComponent(time)}%0A%0APlease let me know the upcoming batch schedule!`;
 
   closeModal("demoModal");
   window.open(`https://wa.me/919903544047?text=${text}`, "_blank", "noopener,noreferrer");
@@ -804,7 +804,7 @@ function handleEligibilitySubmit(event) {
   const degree = form.degree.value.trim();
   const targetProgram = form.targetProgram.value;
 
-  const text = `Hi VASENTRA Study in China Team! 🎓%0A%0AI would like a *Free Eligibility Evaluation*.%0A%0A*Name:* ${encodeURIComponent(name)}%0A*Phone:* ${encodeURIComponent(phone)}%0A*Current Education/Marks:* ${encodeURIComponent(degree)}%0A*Target Program:* ${encodeURIComponent(targetProgram)}%0A%0APlease evaluate my profile for CSC scholarships & university options!`;
+  const text = `Hi VasEntra Study in China Team! 🎓%0A%0AI would like a *Free Eligibility Evaluation*.%0A%0A*Name:* ${encodeURIComponent(name)}%0A*Phone:* ${encodeURIComponent(phone)}%0A*Current Education/Marks:* ${encodeURIComponent(degree)}%0A*Target Program:* ${encodeURIComponent(targetProgram)}%0A%0APlease evaluate my profile for CSC scholarships & university options!`;
 
   closeModal("eligibilityModal");
   window.open(`https://wa.me/919903544047?text=${text}`, "_blank", "noopener,noreferrer");
@@ -818,7 +818,7 @@ function handleQuoteSubmit(event) {
   const service = form.service.value;
   const details = form.details.value.trim();
 
-  const text = `Hi VASENTRA Enterprise Team! 💼%0A%0AI want to request a *Quote*.%0A%0A*Name/Company:* ${encodeURIComponent(name)}%0A*Phone:* ${encodeURIComponent(phone)}%0A*Service:* ${encodeURIComponent(service)}%0A*Details:* ${encodeURIComponent(details)}%0A%0APlease share the pricing and availability!`;
+  const text = `Hi VasEntra Enterprise Team! 💼%0A%0AI want to request a *Quote*.%0A%0A*Name/Company:* ${encodeURIComponent(name)}%0A*Phone:* ${encodeURIComponent(phone)}%0A*Service:* ${encodeURIComponent(service)}%0A*Details:* ${encodeURIComponent(details)}%0A%0APlease share the pricing and availability!`;
 
   closeModal("quoteModal");
   window.open(`https://wa.me/919903544047?text=${text}`, "_blank", "noopener,noreferrer");
@@ -828,7 +828,7 @@ function handleNewsletter() {
   const emailInput = document.getElementById("newsletterEmail");
   const email = emailInput?.value.trim();
   if (email && email.includes("@")) {
-    alert("Thank you! You are subscribed to VASENTRA's weekly Chinese word & cultural tip.");
+    alert("Thank you! You are subscribed to VasEntra's weekly Chinese word & cultural tip.");
     emailInput.value = "";
   } else {
     alert("Please enter a valid email address.");
